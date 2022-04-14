@@ -2,3 +2,6 @@ galletitas
 pan
 fruta
 etc
+pan
+verdura
+gato
