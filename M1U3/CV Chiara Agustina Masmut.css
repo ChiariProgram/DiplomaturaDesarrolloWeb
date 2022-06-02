@@ -1,5 +1,42 @@
-h1{
-font-family: arial,verdana;
-background-color: aliceblue;
+/*font-family: 'Oswald', sans-serif;
+font-family: 'Tiro Devanagari Sanskrit', serif;*/
+
+.caja{
+    width: 200px;
+    height: 150px;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);;
+    margin: 100px;
 }
 
+h1{
+font-family: 'Oswald', sans-serif;
+background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+h2{
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+h3{
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+<style>
+        h1 {
+            text-decoration: underline;
+        }
+
+        p {
+            font-family: 'Tiro Devanagari Sanskrit', serif;
+        }
+
+        body {
+            color: black;
+            background-color: #cccccc;
+            text-indent: 1cm
+            text-align: center
+            
+            font-family: 'Tiro Devanagari Sanskrit', serif;
+           
+            font-family: 'Tiro Devanagari Sanskrit', serif;
+           
+        }
+      
+    </style>
