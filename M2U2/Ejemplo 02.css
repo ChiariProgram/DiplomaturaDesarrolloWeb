@@ -1,0 +1,38 @@
+.Flex-container {
+  background-color: white;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border: 2px groove black;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.Uno {
+  background-color: cornflowerblue;
+  display: inline-flex;
+  width: 100px;
+  height: 100px;
+  margin: 0px;
+  font-size: 30px;
+}
+
+.Dos {
+  background-color: rgb(100, 237, 196);
+  display: inline-flex;
+  width: 100px;
+  height: 100px;
+  margin: 0px;
+  font-size: 30px;
+}
+
+.Tres {
+  background-color: rgb(187, 53, 109);
+  display: inline-flex;
+  width: 100px;
+  height: 100px;
+  margin: 0px;
+  font-size: 30px;
+}
