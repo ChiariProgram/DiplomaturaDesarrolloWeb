@@ -1,0 +1,22 @@
+.contenedor{
+	height: 500px;
+	background-color: blue;
+	display: flex;
+	align-items: flex-start; /*TODOS PARA ARRIBA*/
+	align-items: flex-end; /*TODOS PARA ABAJO*/
+	align-items: center; /*TODOS EN EL CENTRO*/
+	align-items: stretch; /* SI QUIERO QUE OCUPEN TODA LA CAJA, SI QUIERO APLICAR ESTO DEBO ELIMINAR EL HEIGHT*/
+	align-items: baseline; /*BASE EN PRIMERA LINEA*/
+}
+
+
+.item{
+	background-color: #ccc;
+	margin:10px;
+	font-size: 30px;
+	width: 100px;
+	height: 100px;
+	
+}
+
+

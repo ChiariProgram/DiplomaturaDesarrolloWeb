@@ -1,0 +1,19 @@
+.contenedor{
+	background-color: blue;
+	display: flex;
+	justify-content: flex-start; /*este es el que esta por defecto*/
+	justify-content: flex-end; /* si lo quiere enviar para el final*/
+	justify-content: center; /*si lo quiero centrar*/
+	justify-content: space-between; /*ubican al primero y ultimo y los ubican*/
+	justify-content: space-around; /* lo mismo que el anterior pero mas feo*/
+	justify-content: space-evenly; /* igual que el anterior pero mejorado, super ajustado ala pag*/
+}
+
+.item{
+	background-color: #ccc;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	font-size: 30px;
+    margin:10px;
+}
