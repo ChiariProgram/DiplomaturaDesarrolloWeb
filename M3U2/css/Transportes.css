@@ -1,0 +1,346 @@
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Tiro Devanagari Sanskrit', serif;*/
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px; /*tamaño de la letra*/
+  line-height: 20px; /*alto en linea*/
+}
+
+header {
+  background-color: #5dade2;
+  padding: 16px 0; /* el padding es para arriba y abajo para que se separen un poco*/
+}
+
+header h1 {
+  /*TITULO DE PAGINA WEB, EN ESTE CASO TRANSPORTES X*/
+  color: white;
+  font-size: 40px;
+  font-weight: 100; /*peso de la tipografia*/
+  font-style: italic;
+  display: inline-block; /*elemento que esta abajo del otro que tenga display*/
+  position: relative; /*para que quede en el medio cuando achico pantalla*/
+  bottom: 35px;
+  margin-left: 10px;
+}
+
+nav {
+  /*COMENZAMOS CON LA NAVEGACION*/
+  background-color: #7eb7dd;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  /*a este le dijimos que no nos separe la cabecera de la parte de abajo*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  /*crece o especifica el factor de crecimiento, sirve para que el menu de la pagina web se ajuste funciona solo con display flex y el padre UL*/
+  flex-grow: 1;
+}
+
+nav ul li a {
+  color: white; /* a este le agregamos el color blanco a las letras del menu*/
+  text-decoration: none;
+  padding: 3px 6px;
+  display: block; /*este sirve para que el elemento entienda perfectamente que hay un padding y un backgroun, lo toma como si fuera una caja y ahi ya lo podemos ver*/
+  text-align: center;
+}
+
+nav ul li a:hover {
+  /*esto le da sombra cuando acercas el cursor al menu*/
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  background-color: beige;
+  clear: both;
+  color: grey;
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 20px;
+}
+/*AHORA VOY A LA PESTAÑA DE HTML Y AGREGO LA ETIQUETA ACTIVO PARA QUE EL HOME SEA PREDETERMINADO CUANDO ABRIS LA PAGINA WEB/*
+/*DESPUES DE CARGAR EN HTML EL CODIGO DE ACTIVO, TRAIGO A LA PESTAÑA DE CSS EL CODIGO Y LO DISEÑO:*/
+
+nav ul li a.activo {
+  /*ESTO HACE QUE EL BOTON DE HOME SE ENCUENTRE PREDETERMINADO*/
+  background-color: black;
+}
+
+.holder {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* AHORA HAY QUE EMPEZAR A LLENAR LA PAGINA*/
+/* DENTRO DE MAIN AGREGAR DIVS Y RELLENAR CON CONTENIDO, LUEGO EDITAR LOS H2 EN ESTA PESTAÑA DE CSS*/
+.bienvenidos {
+  width: 75px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.testimonios {
+  width: 25%;
+  /*background-color: yellow; si quiero puedo resaltar todas las letras*/
+}
+.columnas {
+  display: flex;
+  justify-content: space-between; /*separa los parrafos en este caso bienvenidos y transporte*/
+  gap: 20px; /*genera una callecita, separacion entre los parrafos esto es fundamental solo se puede usar cuando haydisplay*/
+}
+
+.Bienvenidos p {
+  /*como quiero que sean las p dentro del parrafo bienvenidos*/
+  font-size: 18px;
+}
+
+.Testimonios {
+  background-color: #ccc;
+  padding: 16px;
+}
+
+.Testimonios .cita {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 22px;
+  background-color: cornflowerblue;
+  display: block;
+}
+
+.Testimonios .Autor {
+  font-size: 15px;
+  text-align: center;
+  background-color: lightpink;
+  display: block; /*trabaja en linea, para que no quede todo junto, necesito que me genere un bloque*/
+  margin: 12px 0;
+}
+/*FIN DE HOME*/
+/* INICIO DE NOSOTROS*/
+/* FIN DE NOSOTROS*/
+
+.Historia p {
+  font-size: 12px;
+}
+
+
+
+.Personas{
+  display: flex;
+  justify-content: space-around;
+}
+
+.Persona {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 18%;
+  text-align: center;
+  padding: 13px;
+  box-sizing: border-box;
+}
+
+.Persona img {
+  border-radius: 50%;
+  max-width: 60%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+/* FIN DE NOSOTROS*/
+/*COMIENZO DE SERVICIOS*/
+
+.Servicio {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.Servicio .Info h4 {
+  color: #5dade2;
+  font-weight: 500;
+  font-style: italic;
+  border-bottom: 1px solid #7eb7dd;
+  padding-bottom: 10px;
+}
+
+.Servicio .Info p {
+font-size: 15px;
+
+}
+
+.Servicio img {
+  border-radius: 13px;
+  display: block;
+  max-width: 225px;
+   
+}
+
+.Servicio:nth-child(even){ /*PSEUDO CLASE PARA PAR O IMPAR sirve para dejar de un lado la imagen y del otro, PARA LOS PARES USAMOS DETERMINADOS ELEMENTOS*/
+
+flex-direction: row-reverse;
+
+}
+
+/*FIN DE SERVICIOS*/
+/*inicio DE galeria*/
+.Galeria{ /*ahora van a estar uno al lado del otro*/
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+}
+
+/*inicio de contactoo*/
+
+body{
+  height: 100%; 
+  font-family: 'Noto Sans', sans-serif;
+  background-color: white;
+}
+
+
+.contact_form{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: white; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #5dade2; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: #5dade2; 
+  border-color: #7eb7dd; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+  color: #fff; 
+}
+
+
+span{
+  color: #5dade2; 
+}
+
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+
+h1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: #0e0e0e;
+}
+
+
+h3{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+
+
+p{
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #5dade2;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #5dade2;
+}
+
+/*fin de contacto*/
+
+.Galeria img {
+  width: 18%; /*ancho*/
+  border: 1px solid #ddd; /*borde*/
+  padding: 0.3em; /*separacion de foto de cuadrado aprox es 5px para que tenga separacion*/
+  box-sizing: border-box; 
+  margin-bottom: 20px;
+  margin-right: 2%;
+}
+
+
+
+
+
+
+
+/*FIN DE galeria*/
+
